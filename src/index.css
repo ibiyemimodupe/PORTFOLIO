@@ -1,13 +1,344 @@
+/*body  */
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+HTML{
+  scroll-behavior: smooth;
+}
+.border{
+  width: 90%;
+  margin: auto;
+}
+.border-cont{
+  background-color: #e7eae7;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* nav */
+nav {
+  justify-content: space-between;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+}
+.nav--logo {
+  max-width: 100px;
+}
+.nav--links {
+  list-style: none;
+  display: flex;
+}
+.nav--text {
+  display: flex;
+  align-items: center;
+}
+.nav--links > li {
+  padding: 10px;
+  margin-left: 20px;
+}
+.resume-btn {
+  color: black;
+  background-color:#e7eae7;
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  height: 40px;
+}
+
+
+/* header */
+.header--cont{
+  width: 98%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.header--cont > p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  color: #58b6a0;
+}
+.header--cont > h1,h2{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+.header-btn{
+  color: #58b6a0;
+  background-color:#e7eae7;
+  border: 1px solid #58b6a0;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  height: 40px;
+}
+
+
+/* about */
+.about--pic {
+  display: flex;
+  padding-bottom: 200px;
+}
+.about--text , .expert , .work--cont{
+  font-size: 26px;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+.about--text::before{
+  display: inline-block;
+  height: 1px;
+  content: "";
+  background: black;
+  position: absolute;
+  width: 30%;
+  top: 55%;
+  margin-left: 150px;
+}
+.aboutme > p{
+  margin: 0px;
+  width: 100%;
+  height: 40%;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  font-size:20px;
+  line-height: 1.3;
+}
+.aboutme > ul{
+  font-family:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  line-height: 2;
+  list-style-type:decimal-leading-zero;
+}
+.my-img-cont {
+  width: 100%;
+}
+.my-img {
+  width: 60%;
+  margin-top: 10px;
+  box-shadow: 15px 30px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* experience */
+.expert::before{
+  display: inline-block;
+  height: 1px;
+  content: "";
+  background: black;
+  position: absolute;
+  width: 30%;
+  top: 55%;
+  margin-left: 260px;
+}
+.expert--cont{
+  width: 60%;
+  margin: auto;
+  padding-bottom: 200px;
+}
+.expert--cont > h2{
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  font-size:22px;
+}
+.expert--cont > p{
+  font-size: 13px;
+  font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.expert--cont > ul{
+  font-size: 18px;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+.bullet > li::marker{
+  font-size: 1.4rem;
+  color: #58b6a0;
+}
+.col{
+  color: #58b6a0;
+  font-weight: 700;
+}
+
+
+/* work */
+.work--cont::before{
+  display: inline-block;
+  height: 1px;
+  content: "";
+  background: black;
+  position: absolute;
+  width: 30%;
+  top: 55%;
+  margin-left: 295px;
+}
+
+
+
+/* cards */
+ .card > ul{
+  list-style: none;
+  padding: 0px;
+}
+.cards-list {
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  flex-wrap: wrap;
+  /* gap:20px; */
+  width: 100%;
+  margin: auto;
+  /* background-color: violet; */
+}
+.card {
+  /* width: 300px; */
+  /* background-color: yellow; */
+  font-size: 12px;
+  display: flex;        
+  flex-basis: 30%;
+  flex-direction: column; 
+  padding: 10px;
+  border-radius: 10px;
+  gap: 15px;
+  margin: 50px 0px 0px;
+  box-shadow: 0px 3.98256px 8.4564px rgba(0, 0, 0, 0.1);
+}
+.card > h2,p{
+  margin-inline-start: 10px;
+}
+.card--img{
+  width:  100%;
+  height: 200px;
+  object-fit: cover;
+}
+.icon-btn{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.icon-btn > button{
+  margin-left: 6px;
+}
+@media (max-width:767px) {
+  .card{
+    flex-basis: 32%; 
+  }
+  .nav--links{
+    display: none;
+  }
+  .about--pic{
+    display: block;
+    padding-bottom: 100px;
+  }
+  .my-img-cont{
+    text-align: center;
+  }
+  .expert--cont{
+    width: 100%;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width:575px) {
+  .card{
+    flex-basis: 47%; 
+  }
+  .header--cont > h1,h2{
+    font-size: 30px;
+  }
+  .footer-list{
+    padding: 0px;
+  }
+  .footer-list > li{
+    margin-right: 30px;
+  }
+}
+@media (max-width:420px) {
+  .card{
+    flex-basis: 100%; 
+  }
+}
+.card--title {
+  font-size: 24px;
+}
+.card--price {
+  margin-top: auto;
+  font-size: 16px;
+}
+
+
+/* contact */
+.contact--cont{
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.contact--cont > h1{
+  font-size: 16px;
+  font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  color: #58b6a0;
+}
+.contact--cont > h2{
+  font-size: 58.7px;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  margin:0;
+}
+.contact--cont > p{
+  font-size: 20px;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+.button-text{
+  color: #58b6a0;
+  background-color:#e7eae7;
+  border: 1px solid #58b6a0;
+  border-radius: 4px;
+  font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+
+/* footer */
+.footer-cont{
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 2.98256px 27.4564px rgba(0, 0, 0, 0.1);
+}
+.footer-child{
+  width: 90%;
+  margin: auto;
+}
+.footer-list{
+  list-style: none;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+  width: 30%;
+  margin: auto;
+  padding-top: 30px;
 }
