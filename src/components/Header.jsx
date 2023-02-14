@@ -6,7 +6,7 @@ export default function Header() {
             <p>Hi, my name is</p>
             <h1>Ibiyemi Oluwamodupe.</h1>
             <h2>I'm a Software Developer.</h2>
-            <button className="header-btn">check out my work!</button>
+            <a href="#C3" className="header-btn">check out my work!</a>
         </div>
     )
 }
