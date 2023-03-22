@@ -4,7 +4,7 @@ export default function Experience() {
     return(
         <div className="expert--cont">
             <h1 id="C2" className="expert">Where i've Worked</h1>
-            <h2>Software Developer <span className="col">@ Tech4dev</span></h2>
+            <h2><span className="col">Software Developer </span></h2>
             <p>August 2022 - Present</p>
             <ul className="bullet">
                 <li>Recommended and implemented suggestions for improving documentation and software development process standards.</li>
